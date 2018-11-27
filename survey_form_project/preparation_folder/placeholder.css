@@ -1,0 +1,133 @@
+/* place Holder css */
+::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.34s ease-in-out;
+    transition: opacity 0.35 ease-in-out;
+}
+
+:-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -ms-transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:hover:-ms-input-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:hover::-moz-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+}
+
+:hover:-ms-input-placeholder {
+    opacity: 0.75;
+    -ms-transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-mz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-ms-input-placholder {
+    opacity: 0;
+    -ms-transition: opacity 0.35s ease-in-out;
+}
+
+/* Custom Input Syle */
+.niceform input, .niceform textarea
+{
+    font-size: 16px;
+    padding: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 3px solid #bbb;
+    line-height: 20px;
+    text-indent: 5px;
+    width: 400px;
+    display: block;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.niceform textarea
+{
+    height: 100px;
+}
+
+.niceform button
+{
+    font-size: 16px;
+    padding: 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0px solid #322;
+    line-height: 20px;
+    width: 200px;
+    display: block;
+    clear: both;
+    margin-bottom: 5px;
+    margin-left: 213px;
+    background-color: #626;
+    color: #CCC;
+    cursor: pointer;
+}
+
+.niceform buttom:hover, .niceform buttom:focus
+{
+    outline: none;
+    border-color: #AAA;
+}
+
+.niceform input:hover, .niceform textarea:hover
+{
+    outline: none;
+    border-color: #AAA;
+}
+
+.niceform input:focus, .niceform textarea:focus
+{
+    outline: none;
+    border-color: #888;
+}
+
+/* Misc styles */
+body
+{
+    background-colr: #DDD;
+    padding: 20px;
+}

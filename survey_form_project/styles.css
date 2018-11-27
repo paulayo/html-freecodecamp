@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html, body {
+    background-color: #00aeef;
+    text-align: center;
+    font-family: Raleway, Helvetica, sans-serif;
+    min-width: 320px;
+}
+
+header{
+    font-size: 2em;
+    font-weight: bold;
+    margin:
+
+}
+
+.title {
+   border-radius: 25px;
+   width: 70%;
+   display: inline-grid;
+}
+
+/* input,
+textarea,
+select,
+button {
+    color: initial;
+    letter-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    font: 400 13.333px Arial;
+} */
+
+/* The form outer will contain all division element */
+#form-outer {
+    background-color: rgb(250, 250, 235);
+    margin: 12px auto;
+    border-radius: 15px;
+    width: 75%;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 30px;
+}
+/* The label class that is used for all labels tags */
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 10px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+/* The class defines the styling within a sub-division */
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+/* The class defines the styling for input field tag */
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 5px  #c0c0c0;
+    border-radius: 10px;
+}
+
+#userAge {
+    width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+    float: left;
+    margin-right: 10px;
+}
+
+#submit {
+    background-color: lightblue;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+
+
+}
+
+#submit:hover {
+    background-color: #626;
+}
+
+.dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+.radio, .checkbox {
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+    letter-spacing: normal;
+
+}
+
+
+/* place Holder css */
+::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.34s ease-in-out;
+    transition: opacity 0.35 ease-in-out;
+}
+
+:-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -ms-transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:hover::-webkit-input-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:hover:-ms-input-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:hover::-moz-placeholder {
+    opacity: 0.75;
+    -moz-transition: opacity 0.35s ease-in-out;
+}
+
+:hover:-ms-input-placeholder {
+    opacity: 0.75;
+    -ms-transition: opacity 0.35s ease-in-out;
+}
+
+/* Place Holder CSS for Focus */
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-mz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+
+:focus:-ms-input-placholder {
+    opacity: 0;
+    -ms-transition: opacity 0.35s ease-in-out;
+}
+
+@media screen and (max-width: 520px) {
+    .labels {
+        width: 100%;
+        text-align: left;
+
+    }
+    .rightTab {
+        width: 80;
+        float: left;
+
+
+    }
+    .input-field {
+        width: 100%;
+
+    }
+    select {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 833px) {
+    .input-field {
+        width: 80;
+    }
+    select {
+        width: 90%;
+
+    }
+}
