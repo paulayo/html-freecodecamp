@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "C:\Users\Ayo Paul\Pictures\maggy";
 
 html body {
@@ -82,3 +83,89 @@ header-img {
 /* Styles for the footer */
 
 /* Styles for the media queries */
+=======
+@import "C:\Users\Ayo Paul\Pictures\maggy";
+
+html body {
+    background: white;
+    margin: 15px;
+    border: none;
+    padding: 40px;
+    margin-bottom: 15px;
+    width: 70%;
+    max-width: 100%;
+    text-decoration: none;
+    font-weight: normal;
+
+}
+
+/* Styles for the classes in the html  */
+.container
+{
+    background-color: white;
+    display: inline-grid;
+    color: black;
+    margin-top: auto, 0;
+    border: solid;
+    /* border-radius: 15px; */
+
+}
+
+.row
+{
+    text-align: center;
+    background-color: purple;
+    display: block;
+    /* border: 10px; */
+
+
+
+}
+
+.form
+{
+    border: 12px;
+    border-radius: 30px;
+    color: skyblue;
+}
+
+li  {
+    list-style: none;
+}
+
+/* Styles for id in the html */
+page-wrapper {
+    position: relative;
+}
+#header
+{
+
+}
+ 
+header-img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    
+}
+#navbar
+{
+    display: inline-block
+    background-color: navy;
+}
+
+#main-text {
+
+}
+
+#sidebar
+{
+
+}
+
+/* Styles for the animation */
+
+/* Styles for the footer */
+
+/* Styles for the media queries */
+>>>>>>> third_proj
