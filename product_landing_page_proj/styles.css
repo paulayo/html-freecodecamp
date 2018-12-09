@@ -3,7 +3,10 @@
 html body {
     background: white;
 
-
+a 
+{
+    text-decoration: none;
+}
 }
 
 /* Styles for the classes in the html  */
@@ -27,28 +30,37 @@ html body {
 {
 
 }
+.logo 
+{
+    
+}
 
 li  {
 
 }
 
 /* Styles for id in the html */
-page-wrapper {
+.page-wrapper {
     position: relative;
 }
-#header
+#header     
 {
-
+    width: 110%;
+    text-decoration: none;
+    display: inline-grid;
 
 }
 
-header-img {
-
+.header-img {
+    width: 24%;
+    padding: 5px;
+    margin: 4px;
+    border: 10px
 
 }
 #navbar
 {
-
+    display: inline-block;
 }
 
 #main-text {
@@ -58,6 +70,11 @@ header-img {
 #sidebar
 {
 
+}
+#img 
+{
+    width: 50%;
+    margin: 4px 0px 40px 60px;
 }
 
 /* Styles for the animation */
