@@ -1,0 +1,1 @@
+This repo holds the tribute page project for the responsive web design course for the freecodecamp

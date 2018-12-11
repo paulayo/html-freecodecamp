@@ -53,15 +53,14 @@ li  {
 page-wrapper {
     position: relative;
 }
-#header
-{
-
+#header {
+    
 }
  
-header-img {
+#header-img {
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: 90%;
     
 }
 #navbar
