@@ -1,262 +1,318 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-@import "C:\Users\Ayo Paul\Pictures\maggy";
 
-html body {
-    background: white;
-    margin: 15px;
-    border: none;
-    padding: 40px;
-    margin-bottom: 15px;
-    width: 70%;
-    max-width: 100%;
+/* ========================================================
+    |   |   |   Html, Body
+============================================================ */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+#page-wrapper {
+    position: relative;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    /* font-weight: 400; */
+    line-height: 20px;
+}
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
     text-decoration: none;
-    font-weight: normal;
-
-}
-
-/* Styles for the classes in the html  */
-.container
-{
-    background-color: white;
-    display: inline-grid;
-    color: black;
-    margin-top: auto, 0;
-    border: solid;
-    /* border-radius: 15px; */
-
-}
-
-.row
-{
+    background: rgba(0,0,0,0.2);
     text-align: center;
-    background-color: purple;
-    display: block;
-    /* border: 10px; */
+    transition: all 0.5s;
+}
+a:hover {
+    background: rgba(0,0,0,0.3);
+}
 
+body { 
+    font-family: sans-serif;
+    margin: 0;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    min-height: 100vh;
+}
+/* Header section starts here */
+.nav-wrapper {
+    margin: 0 auto;
+    padding: 0px;
+}
 
+.flex-nav ul {
+    list-style: none;
+    margin: 0 0 0 0;
+    margin-top: -40px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-nav .navtext {
+    padding: 10px 30px 0px 20px;
+    margin-top: 1px;
+}
+.flex-nav li {
+    display: flex;
+    width: 10%;
+}
+.flex-nav  a {
+    flex: 1 1 100%;
+}
+@media all and (max-width:1000px) {
+   
+
+    }
+}
+
+@media all and (max-width:500px) {
+    .nav-wrapper {
+        background-color: #df24cd;
+    }
+    .flex-nav ul {
+        flex-direction: column;
+        height: 150px;
+        display:none; 
+    }
+    .flex-nav li {
+        flex: 1;
+    }
 
 }
 
-.form
-{
-    border: 12px;
-    border-radius: 30px;
-    color: skyblue;
+
+/* home section starts here */
+.home {
+    width: 100%;
+    /* background: url("img/food16.jpg"); */
+    background-size: cover;
+}
+.home-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: url("img/homepage_banner.jpg");
+    height: 70vh;
+    background-size: cover;
+    margin-top: -5px;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100%;     */
+}
+.home-heading h1 {
+    margin: 0;
+    padding: 0;
+}
+.home-text p {
+    margin-bottom: 60px;
+}
+.gen-button {
+    /* background-color: #f20c17; */
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 12px 46px 12px 46px;
+    font-weight: 100;
+    text-decoration-line: none;
+    color: #ffffff;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    border: solid 1.5px #fff; 
+    width: 30%;
 }
 
-li  {
+
+
+/* Recipe starts here */
+
+.recipe {
+    position: relative;
+    margin-top: 100px;
+}
+.recipe-container {
+    display: grid;
+    grid-template-columns: 200px 200px auto;
+    grid-template-rows: 100px 100px 100px;
+    grid-column-gap: 7em;
+    grid-row-gap: 10em;
+    justify-content: center;
+    grid-template-areas: "box1 box2 ."
+                         "box3 box4 .";
+    
+}
+    
+.recipe-contentBox1 {
+    margin: 30px auto;
+    grid-area: box1;
+}
+.recipe-contentBox2 {
+    margin: 30px auto;
+    grid-area: box2;
+}
+.recipe-contentBox3 {
+    margin: 30px auto;
+    grid-area: box3;
+}
+.recipe-contentBox4 {
+    margin: 30px auto;
+    grid-area: box4;
+}
+.recipe-img { 
+}
+.videoBox {
+    /* grid-area: box5; */
+    margin: 100px auto;
+    width: 400px;
+}
+.recipe-type {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-size: 0.8em;
+    color: #e9222c;
+    font-family: "Century Gothic", CenturyGothic, Arial, sans-serif;
+    box-sizing: border-box;
+}
+.recipe-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    color: #000000;
+    font-family: "Century Gothic", CenturyGothic, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.services {
+    margin:100px auto;
+    display: flex;
+    justify-content: center;
+}
+.services-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+}
+.services-box {
+    background: rgba(255, 255, 255, 0.2);
+    flex: 1 1 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-box > * {
+    flex: 1 1 70%;
+    padding: 10px;
+}
+.services-box .cta {
+    align-self: center;
+    background-color: #ffff00;
+    color: #000000;
+    cursor: pointer;
+}
+.price {
+    font-size: 40px;
+    font-family: serif;
+}
+ul {
     list-style: none;
 }
-
-/* Styles for id in the html */
-page-wrapper {
-    position: relative;
-}
-#header {
-    
-}
- 
-#header-img {
-    margin: 0px;
-    padding: 0px;
-    width: 90%;
-    
-}
-#navbar
-{
-    display: inline-block
-    background-color: navy;
+.services-box li{
+    padding: 10px;
 }
 
-#main-text {
+.newsletter {
+    /* margin: 100px; */
+    display: flex;
+    width: 100%;
+    /* border: 2px solid #000000; */
+    justify-content: center;
+    align-content: center;
+    background: rgba(100, 100, 50, 0.3);
+}
+.newsletterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid blanchedalmond; */
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.newsletterContainer > * {
+    flex: 1 1 100%;
+}
+.newsletterContainer h1 {
+        
+}
+.newsletterContainer p {
+    color: #ffff00;
+    font-size: 1em;
 
 }
-
-#sidebar
-{
-
-}
-
-/* Styles for the animation */
-
-/* Styles for the footer */
-
-/* Styles for the media queries */
-=======
-@import "C:\Users\Ayo Paul\Pictures\maggy";
-=======
-
->>>>>>> third_proj
-
-html body {
-    background: white;
-
-a 
-{
-    text-decoration: none;
-}
-}
-
-/* Styles for the classes in the html  */
-.container
-{
-   ;
-    /* border-radius: 15px; */
-
-}
-
-.row
-{
-
-    /* border: 10px; */
-
-
-
-}
-
-.form
-{
-
-}
-.logo 
-{
-    
-}
-
-li  {
-
-}
-
-/* Styles for id in the html */
-.page-wrapper {
-    position: relative;
-}
-#header     
-{
-    width: 110%;
-    text-decoration: none;
-    display: inline-grid;
-
-}
-
-.header-img {
-    width: 24%;
-    padding: 5px;
-    margin: 4px;
-    border: 10px
-
-}
-#navbar
-{
+.newsletterContainer input[type=submit], input[type=email]{
+    width: 50%;
+    padding: 12px;
+    margin: 8px;
     display: inline-block;
 }
-
-#main-text {
-
-}
-
-#sidebar
-{
-
-}
-#img 
-{
-    width: 50%;
-    margin: 4px 0px 40px 60px;
-}
-
-/* Styles for the animation */
-
-/* Styles for the footer */
-
-/* Styles for the media queries */
->>>>>>> third_proj
-||||||| merged common ancestors
-=======
-
-
-html body {
-    background: white;
-
-a 
-{
+.newsletterContainer input[type=submit] {
+    color: white;   
+    letter-spacing: 2px;
     text-decoration: none;
-}
-}
-
-/* Styles for the classes in the html  */
-.container
-{
-   ;
-    /* border-radius: 15px; */
-
-}
-
-.row
-{
-
-    /* border: 10px; */
-
+    background: rgba(0,0,0,0.2);
+    transition: all 0.5s;
 
 
 }
 
-.form
-{
 
+
+
+
+
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;    
+    background-color:#000000;
 }
-.logo 
-{
-    
+.footer-container ul {
+    display: flex;
+    justify-content: center;
 }
-
-li  {
-
+.small-2{
+    padding: 11px;
 }
-
-/* Styles for id in the html */
-.page-wrapper {
-    position: relative;
-}
-#header     
-{
-    width: 110%;
-    text-decoration: none;
-    display: inline-grid;
-
-}
-
-.header-img {
-    width: 24%;
-    padding: 5px;
-    margin: 4px;
-    border: 10px
-
-}
-#navbar
-{
-    display: inline-block;
+.small-3 {
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-#main-text {
+
+
+
+@media screen and (max-width: 1000px) {
+
 
 }
-
-#sidebar
-{
+@media screen and (max-width: 500px) {
 
 }
-#img 
-{
-    width: 50%;
-    margin: 4px 0px 40px 60px;
-}
-
-/* Styles for the animation */
-
-/* Styles for the footer */
-
-/* Styles for the media queries */
->>>>>>> third_proj
