@@ -23,34 +23,33 @@
                 <nav class="flex-nav">
                         <a class="toggle" id="navToggle" href="#"><i class="fas fa-bars"></i></a>
                     <h1 class="navtext">Maggy's Recipe</h1>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#recipes">Recipes</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#newletter">Log in</a></li>
-                            <li><a href="#services">Subcribe</a></li>
+                        <ul class="dashBoardContent">
+                            <li class="dashBoard"><a href="#home" class="nav-links">Home</a></li>
+                            <li class="dashBoard"><a href="#recipes" class="nav-links">Recipes</a></li>
+                            <li class="dashBoard"><a href="#services" class="nav-links">Services</a></li>
+                            <li class="dashBoard"><a href="#contact" class="nav-links">Contact</a></li>
+                            <li class="dashBoard"><a href="#newletter" class="nav-links">Log in</a></li>
+                            <li class="dashBoard"><a href="#services" class="nav-links">Subcribe</a></li>
                         </ul>
                 </nav>
             </div>
         <!--Home Section-->
                 <section id="home">
                 <div class="home-container">
-                    <!-- <div class="home-bg-img"><img src="img/food16.jpg" id="home-bg-img" alt="Home Image"></div> -->
-                    <div class="home-overlay"></div>
+            
                     <!-- Home Content -->
-                    <div class="home-content">
+                    <!-- <div class="home-content"> -->
                             <div class="home-heading">
-                                <h1>Great Meals, <span>Good Life!</span></h1>
+                                    <h1>Great Meals, <span>Good Life!</span></h1>
                             </div>
                             <div class="home-text">
                                     <P>Maggy's Recipe serves it meals to satisfy your taste.</P>
                         
                             </div>
                             <div class="home-button">
-                                <a class="gen-button "  href="#about" title="Join Us Now">Join us now for free</a>
+                                <a class="gen-button "  href="#newletter" title="Join Us Now">Join us now for free</a>
                             </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
                 </section>
             
@@ -128,7 +127,7 @@
             <div class="newsletterContainer">
             <h1>Get Our Newsletter</h1>
             <p>Get recipes, tips and special offers delivered straight to your inbox.</p>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <form id="form" class="newletterForm" action="https://www.freecodecamp.com/email-submit">
                 <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
                 <input id="submit" type="submit" value="Sign Up" class="btn">
             </form>
@@ -136,10 +135,11 @@
         </section>
         <footer>
             <div class="footer-container" id="contact">
-                <ul>
-                    <li class="small-2"><a href="#">Privacy Policy</a></li>
-                    <li class="small-2"><a href="#">Terms and conditons</a></li>
-                    <li class="small-2"><a href="#">SiteMap</a></li>
+                
+                <ul class="footerContent">
+                    <li class="contentText"><a href="#">Privacy Policy</a></li>
+                    <li class="contentText"><a href="#">Terms and conditons</a></li>
+                    <li class="contentText"><a href="#">SiteMap</a></li>
                 </ul>
                 <div class="small-3"><p>&copy Copyright 2020, Maggy's Recipes</p>
                 </div>
