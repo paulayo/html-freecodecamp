@@ -1,11 +1,135 @@
-<html lang="en">
+<!DOCTYPE html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
 </head>
 <body>
-    
+    <div class="main-body">
+        <nav class="navbar" id="navbar">
+            <header>JS Documentation</header>
+
+            <ul> 
+                    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+                    <a class="nav-link" href="#JavaScript" rel="internal"><li>JavaScript</li></a>
+                    <a class="nav-link" href="#Variables" rel="internal"><li>Variables</li></a>
+                    <a class="nav-link" href="#Declaring_variables" rel="internal"><li>Declaring variables</li></a>
+                    <a class="nav-link" href="#variable_scope" ><li>Variable Scope</li></a>
+                    <a class="nav-link" href="#Functions" rel="internal"><li>Functions</li></a>
+                    <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+                    </ul>
+            
+        </nav>
+        <main id="mainBox" class="mainBox">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>  
+                        <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+                    
+                    <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+                    
+                    <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+                    <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+            </article>
+            </section>
+            <section class="main-section" id="JavaScript">
+                <header>JavaScript</header>
+                <article>
+                <p>JavaScript was initially created to “make web pages alive”.
+
+                    The programs in this language are called scripts. They can be written right in a web page’s HTML and executed automatically as the page loads.
+                    
+                    Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.</p>
+                <p>When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.
+
+                    But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all. Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine.
+
+                    The browser has an embedded engine sometimes called a “JavaScript virtual machine”.</p>
+                
+                </article>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <article>
+                <p>
+                        You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+                            </p>
+                            <p>
+                        A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                            </p>
+                            <p>
+                        You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers.
+                        
+                        Some examples of legal names are Number_hits, temp99, and _name.
+                            </p>
+                </article>
+            </section>
+            <section class="main-section" id="Declaring_variables">
+                    <header>Declaring variables</header>
+                    <article>
+                You can declare a variable in three ways:
+                        <p>
+                        With the keyword var. For example, <pre><code>var x = 42.</code></pre> This syntax can be used to declare both local and global variables.
+                        </p>
+                        <p>
+                        By simply assigning it a value. For example,<pre><code>x = 42.</code></pre> This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+                        </p>
+                        <p>
+                        With the keyword let. For example,<pre><code> let y = 13.</code></pre> This syntax can be used to declare a block scope local variable. See Variable scope below.
+                        </p>
+                    </article>
+                    </section>
+            <section class="main-section" id="variable_scope">
+                <header>Variable Scope</header>
+                <article>
+                        <p> When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+                    
+                    <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+                    <pre>
+                    <code>if (true) {
+                        var x = 5;
+                    }
+                    console.log(x);  // 5</code>
+                    </pre>
+                            <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+                    <pre>
+                    <code>if (true) {
+                        let y = 5;
+                    }
+                    console.log(y);  
+                    // ReferenceError: y is not defined</code></pre>
+                        </article>
+            </section>
+            <section class="main-section" id="Functions">
+                    <header>Functions</header>
+                    <article>
+                    <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+
+                    <li>The name of the function.</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                    <p>For example, the following code defines a simple function named square:</P>
+                <pre>
+                <code>function square(number) {
+                return number * number;
+                }</code></pre>
+                <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.
+                    </p>
+                    <pre><code>return number * number;</code></pre>
+                <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
+                    </article>
+                
+            </section>
+            <section class="main-section" id="Reference">
+                    <header>Reference</header>
+                    <article>
+                        <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+                    </article>
+                    </section>
+
+        </main>
+</div>
 </body>
 </html>
